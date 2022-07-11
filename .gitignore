@@ -1,0 +1,12 @@
+wandb/*
+model/__pycache__/*
+manifolds_/__pycache__/*
+autotrain/__pycache__/*
+Similarity/__pycache__/*
+Loss/__pycache__/*
+load_data_f/__pycache__/*
+load_data/__pycache__/*
+__pycache__/*
+load_disF/__pycache__/*
+load_simF/__pycache__/*
+eval/__pycache__/*
