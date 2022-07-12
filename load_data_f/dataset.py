@@ -197,12 +197,15 @@ class EMnistBYCLASSDataModule(Source.Source):
     def _LoadData(self):
         print('load EMnistBYCLASSDataModule')
         
+        printprint
+
         dataloader = datasets.EMNIST(
             # root="/root/data", split='byclass', train=self.train, download=True, transform=None
             root="/root/data", split='byclass', train=self.train, download=True, transform=None
         )
         
         self.data = dataloader.data[:self.args['n_point']].float() / 255
+        print(self.data.shape)
         self.label = dataloader.targets[:self.args['n_point']]
         self.inputdim = self.data[0].shape
         self.label_str = [[ str(i) for i in list(dataloader.targets[:self.args['n_point']].numpy()) ]]

@@ -258,7 +258,7 @@ class Eval():
         l1 = list(set(label))
         numclass1 = len(l1)
 
-        predict_labels = KMeans(n_clusters=numclass1, random_state=0, n_jobs=1).fit_predict(embedding)
+        predict_labels = KMeans(n_clusters=numclass1, random_state=0).fit_predict(embedding)
         # predict_labels = method.predict(embedding)
 
         l2 = list(set(predict_labels))

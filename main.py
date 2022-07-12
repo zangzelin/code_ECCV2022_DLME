@@ -450,7 +450,7 @@ def main(args):
         args=args,
         gpus=1, 
         max_epochs=args.epochs, 
-        progress_bar_refresh_rate=10,
+        progress_bar_refresh_rate=100000000,
         checkpoint_callback=False,
         # check_val_every_n_epoch=args.log_interval,
         logger=False,
@@ -466,7 +466,7 @@ if __name__ == "__main__":
     parser.add_argument('--name', type=str, default='digits_T', )
 
     # data set param
-    parser.add_argument('--data_name', type=str, default='Digits', 
+    parser.add_argument('--data_name', type=str, default='EMnistBYCLASS', 
                         choices=[
                             'Digits', 'Coil20', 'Coil100',
                             'Smile', 'ToyDiff', 'SwissRoll',
