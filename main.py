@@ -466,7 +466,7 @@ if __name__ == "__main__":
     parser.add_argument('--name', type=str, default='digits_T', )
 
     # data set param
-    parser.add_argument('--data_name', type=str, default='BlodAll', 
+    parser.add_argument('--data_name', type=str, default='Digits', 
                         choices=[
                             'Digits', 'Coil20', 'Coil100',
                             'Smile', 'ToyDiff', 'SwissRoll',
