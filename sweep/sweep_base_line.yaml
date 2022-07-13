@@ -16,7 +16,7 @@ parameters:
     # 'EMnist',
     'Mnist',
     # 'EMnistBC',
-    'EMnistBYCLASS',
+    # 'EMnistBYCLASS',
     'Colon',
     'Gast10k',
     'HCL60K',
@@ -30,7 +30,7 @@ parameters:
   lr: 
     values: [1e-3]
   batch_size:
-    values: [300, 500, 800,]
+    values: [300, 500, 1000,]
   vs:
     values: [5e-2, 2e-2, 1e-2, 2e-3,]
   ve:
@@ -42,4 +42,4 @@ parameters:
   num_latent_dim:
     values: [2]
   augNearRate:
-    values: [100, 1000, 10000]
+    values: [100000]

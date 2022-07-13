@@ -415,6 +415,8 @@ def main(args):
 
     pl.utilities.seed.seed_everything(args.__dict__['seed'])
     info = [str(s) for s in sys.argv[1:]]
+    if args.data_name == 'HCL280K':
+        args.data_name = 'HCL60K'
     runname = '_'.join(['dmt', args.data_name, ''.join(info)])
     
     disfunc_use = getattr(disfunc, 'EuclideanDistanceNumpy')
