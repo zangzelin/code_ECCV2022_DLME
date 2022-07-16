@@ -242,6 +242,7 @@ class SAMUSIKDataModule(Source.Source):
         lab_all = list(set(lab_str))
         lab_all_undup = list(set(lab_all))
         label_train_numpy = np.array([lab_all.index(i) for i in lab_str])
+
         # input('-----------')
         self.data = torch.tensor(data,dtype=torch.float)
         self.label = np.array([lab_all_undup.index(i) for i in lab_str])

@@ -1,0 +1,47 @@
+program: main.py
+method: grid
+project: DLME_ECCV2022
+name: ALL
+metric:
+  goal: maximize
+  name: SVC
+parameters:
+  data_name: 
+    values: [
+    # 'SwissRoll',
+    # 'Digits',
+    # 'Coil20',
+    # 'Coil100',
+    # 'KMnist',
+    # 'EMnist',
+    # 'Mnist',
+    # 'EMnistBC',
+    # 'EMnistBYCLASS',
+    # 'Colon',
+    # 'Gast10k',
+    # 'HCL60K',
+    # 'PBMC',
+    # 'HCL280K',
+    # 'SAMUSIK',
+    # 'MCA',
+    'Activity',
+    ]
+  perplexity:
+    values: [20]
+  lr: 
+    values: [1e-3]
+  batch_size:
+    values: [300, 500, 1000,]
+  vs:
+    # values: [5e-2, 2e-2, 1e-2, 2e-3,]
+    values: [5e-3, 1e-3, 5e-2, 2e-2, 1e-2, 2e-3,]
+  ve:
+    values: [-1]
+  method:
+    values: ['dmt']
+  K:
+    values: [3, 5, 10, 15, 20, 25]
+  num_latent_dim:
+    values: [2]
+  augNearRate:
+    values: [100000]

@@ -42,18 +42,18 @@
 # python ./autotrain/autotrain_Coil100.py
 
 
-CUDA_VISIBLE_DEVICES=0 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-CUDA_VISIBLE_DEVICES=1 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-CUDA_VISIBLE_DEVICES=2 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-CUDA_VISIBLE_DEVICES=3 wandb agent cairi/DLME_ECCV2022/aaaddczh &
-CUDA_VISIBLE_DEVICES=4 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-CUDA_VISIBLE_DEVICES=5 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-CUDA_VISIBLE_DEVICES=6 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-CUDA_VISIBLE_DEVICES=7 wandb agent cairi/DLME_ECCV2022/aaaddczh 
-# CUDA_VISIBLE_DEVICES=4 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-# CUDA_VISIBLE_DEVICES=5 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-# CUDA_VISIBLE_DEVICES=6 wandb agent cairi/DLME_ECCV2022/aaaddczh & 
-# CUDA_VISIBLE_DEVICES=7 wandb agent cairi/DLME_ECCV2022/aaaddczh
+CUDA_VISIBLE_DEVICES=0 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+CUDA_VISIBLE_DEVICES=1 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+CUDA_VISIBLE_DEVICES=2 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+CUDA_VISIBLE_DEVICES=3 wandb agent cairi/DLME_ECCV2022/9933is4u &
+CUDA_VISIBLE_DEVICES=4 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+CUDA_VISIBLE_DEVICES=5 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+CUDA_VISIBLE_DEVICES=6 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+CUDA_VISIBLE_DEVICES=7 wandb agent cairi/DLME_ECCV2022/9933is4u 
+# CUDA_VISIBLE_DEVICES=4 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+# CUDA_VISIBLE_DEVICES=5 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+# CUDA_VISIBLE_DEVICES=6 wandb agent cairi/DLME_ECCV2022/9933is4u & 
+# CUDA_VISIBLE_DEVICES=7 wandb agent cairi/DLME_ECCV2022/9933is4u
 
 # python baseline.py --data_name HCL60K
 # python baseline.py --data_name HCL280K
