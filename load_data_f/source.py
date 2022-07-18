@@ -12,7 +12,7 @@ import os
 
 class Source(torch.utils.data.Dataset):
     
-    def __init__(self, DistanceF, SimilarityF, SimilarityNPF, jumpPretreatment=False, **kwargs):
+    def __init__(self, DistanceF, SimilarityF, SimilarityNPF, jumpPretreatment=False, usegpu=0, **kwargs):
         self.args = kwargs
         self.DistanceF = DistanceF
         self.SimilarityF = SimilarityF
@@ -40,8 +40,12 @@ class Source(torch.utils.data.Dataset):
                 #     )
             # else:
             #     self.sigma, self.rho, self.inputdim = joblib.load('save/'+filename)
-        self.data = self.data.reshape((self.data.shape[0], -1)).cuda()
-        self.neighbors_index = torch.tensor(self.neighbors_index).cuda()
+        if usegpu == 1:
+            self.data = self.data.reshape((self.data.shape[0], -1)).cuda()
+            self.neighbors_index = torch.tensor(self.neighbors_index).cuda()
+        else:
+            self.data = self.data.reshape((self.data.shape[0], -1))
+            self.neighbors_index = torch.tensor(self.neighbors_index)
 
 
     def _LoadData(self, ):

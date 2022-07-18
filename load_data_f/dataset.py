@@ -13,8 +13,8 @@ import scanpy as sc
 import scipy
 from sklearn.decomposition import PCA
 import pandas as pd
-from load_data_f.dataset_pei import *
-from load_data_f.dataset_blod import *
+# from load_data_f.dataset_pei import *
+# from load_data_f.dataset_blod import *
 
 class DigitsDataModule(Source.Source):
 
