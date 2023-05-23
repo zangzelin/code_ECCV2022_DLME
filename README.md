@@ -76,6 +76,30 @@ If you find this file useful in your research, please consider citing:
   journal={arXiv preprint arXiv:2207.03160},
   year={2022}
 }
+@InProceedings{10.1007/978-3-031-19803-8_34,
+author="Zang, Zelin
+and Li, Siyuan
+and Wu, Di
+and Wang, Ge
+and Wang, Kai
+and Shang, Lei
+and Sun, Baigui
+and Li, Hao
+and Li, Stan Z.",
+editor="Avidan, Shai
+and Brostow, Gabriel
+and Ciss{\'e}, Moustapha
+and Farinella, Giovanni Maria
+and Hassner, Tal",
+title="DLME: Deep Local-Flatness Manifold Embedding",
+booktitle="Computer Vision -- ECCV 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="576--592",
+abstract="Manifold learning (ML) aims to seek low-dimensional embedding from high-dimensional data. The problem is challenging on real-world datasets, especially with under-sampling data, and we find that previous methods perform poorly in this case. Generally, ML methods first transform input data into a low-dimensional embedding space to maintain the data's geometric structure and subsequently perform downstream tasks therein. The poor local connectivity of under-sampling data in the former step and inappropriate optimization objectives in the latter step leads to two problems: structural distortion and underconstrained embedding. This paper proposes a novel ML framework named Deep Local-flatness Manifold Embedding (DLME) to solve these problems. The proposed DLME constructs semantic manifolds by data augmentation and overcomes the structural distortion problem using a smoothness constrained based on a local flatness assumption about the manifold. To overcome the underconstrained embedding problem, we design a loss and theoretically demonstrate that it leads to a more suitable embedding based on the local flatness. Experiments on three types of datasets (toy, biological, and image) for various downstream tasks (classification, clustering, and visualization) show that our proposed DLME outperforms state-of-the-art ML and contrastive learning methods.",
+isbn="978-3-031-19803-8"
+}
 ```
 
 
